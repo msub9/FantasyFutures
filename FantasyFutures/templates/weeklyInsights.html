@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Josefin Sans", sans-serif}
+h2 {font-family: "Josefin Sans", sans-serif}
+h5 {font-family: "Josefin Sans", sans-serif}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-gray w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <img src="/static/FantasyFuturesLogo-2.png" class="w3-bar-item w3-padding-large" alt="Random Name" style="width:8%">
+      <a href="index.html" target="_self" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="weeklyInsights.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Weekly Insights</a>
+    <a href="analyze.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Analyze</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- table for top players this year -->
+    <div class="w3-container w3-padding-48">
+<h5>Top 20 Players</h5>
+       <p> These are the top players on fantasy for this year by value added over replacement.</p>
+  <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for names.." >
+        <div class="w3-responsive" class ="w3-padding-32">
+    <table border="1" id="tabl" style="max-height: 600px; overflow: auto; display: inline-block;" class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white w3-table-all w3-small">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Rank</th>
+      <th>PlayerName</th>
+      <th>Team</th>
+      <th>Position</th>
+      <th>Age</th>
+      <th>GamesPlayed</th>
+      <th>GamesStarted</th>
+      <th>CompletedPasses</th>
+      <th>AttemptedPasses</th>
+      <th>PassingYards</th>
+      <th>PassingTouchdowns</th>
+      <th>Interceptions</th>
+      <th>RushAttempts</th>
+      <th>RushYards</th>
+      <th>YardsPerRush</th>
+      <th>RushingTouchdowns</th>
+      <th>Targets</th>
+      <th>Receptions</th>
+      <th>ReceivingYards</th>
+      <th>YardsPerRecepetion</th>
+      <th>ReceivingTouchdowns</th>
+      <th>Fumbles</th>
+      <th>FL</th>
+      <th>TotalTouchdowns</th>
+      <th>FantPt</th>
+      <th>PPR</th>
+      <th>DKPt</th>
+      <th>FDPt</th>
+      <th>VBD</th>
+      <th>PositionRank</th>
+      <th>OverallRank</th>
+      <th>TotalYards</th>
+      <th>TotalTargets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Josh Allen</td>
+      <td>BUF</td>
+      <td>QB</td>
+      <td>26</td>
+      <td>6</td>
+      <td>6</td>
+      <td>160</td>
+      <td>239</td>
+      <td>1980</td>
+      <td>17</td>
+      <td>4</td>
+      <td>47</td>
+      <td>257</td>
+      <td>5.47</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>173.0</td>
+      <td>172.9</td>
+      <td>184.9</td>
+      <td>176.9</td>
+      <td>74.0</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>257</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nick Chubb</td>
+      <td>CLE</td>
+      <td>RB</td>
+      <td>27</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110</td>
+      <td>649</td>
+      <td>5.90</td>
+      <td>7</td>
+      <td>11</td>
+      <td>7</td>
+      <td>51</td>
+      <td>7.29</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>112.0</td>
+      <td>119.0</td>
+      <td>122.0</td>
+      <td>115.5</td>
+      <td>58.0</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>700</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Travis Kelce</td>
+      <td>KAN</td>
+      <td>TE</td>
+      <td>33</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2.50</td>
+      <td>0</td>
+      <td>52</td>
+      <td>41</td>
+      <td>455</td>
+      <td>11.10</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>90.0</td>
+      <td>131.0</td>
+      <td>134.0</td>
+      <td>110.5</td>
+      <td>54.0</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>460</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Stefon Diggs</td>
+      <td>BUF</td>
+      <td>WR</td>
+      <td>29</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>65</td>
+      <td>49</td>
+      <td>656</td>
+      <td>13.39</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>102.0</td>
+      <td>150.6</td>
+      <td>153.6</td>
+      <td>126.1</td>
+      <td>53.0</td>
+      <td>1</td>
+      <td>4.0</td>
+      <td>656</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Saquon Barkley</td>
+      <td>NYG</td>
+      <td>RB</td>
+      <td>25</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>119</td>
+      <td>616</td>
+      <td>5.18</td>
+      <td>4</td>
+      <td>26</td>
+      <td>21</td>
+      <td>155</td>
+      <td>7.38</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>103.0</td>
+      <td>124.1</td>
+      <td>130.1</td>
+      <td>113.6</td>
+      <td>50.0</td>
+      <td>2</td>
+      <td>5.0</td>
+      <td>771</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Lamar Jackson</td>
+      <td>BAL</td>
+      <td>QB</td>
+      <td>25</td>
+      <td>6</td>
+      <td>6</td>
+      <td>112</td>
+      <td>181</td>
+      <td>1277</td>
+      <td>13</td>
+      <td>6</td>
+      <td>56</td>
+      <td>451</td>
+      <td>8.05</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>146.0</td>
+      <td>146.2</td>
+      <td>159.2</td>
+      <td>152.2</td>
+      <td>48.0</td>
+      <td>2</td>
+      <td>6.0</td>
+      <td>451</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Jalen Hurts</td>
+      <td>PHI</td>
+      <td>QB</td>
+      <td>24</td>
+      <td>6</td>
+      <td>6</td>
+      <td>123</td>
+      <td>184</td>
+      <td>1514</td>
+      <td>6</td>
+      <td>2</td>
+      <td>77</td>
+      <td>293</td>
+      <td>3.81</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>6</td>
+      <td>146.0</td>
+      <td>145.9</td>
+      <td>153.9</td>
+      <td>147.9</td>
+      <td>48.0</td>
+      <td>3</td>
+      <td>7.0</td>
+      <td>293</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Patrick Mahomes</td>
+      <td>KAN</td>
+      <td>QB</td>
+      <td>27</td>
+      <td>6</td>
+      <td>6</td>
+      <td>151</td>
+      <td>229</td>
+      <td>1736</td>
+      <td>17</td>
+      <td>4</td>
+      <td>21</td>
+      <td>113</td>
+      <td>5.38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>143.0</td>
+      <td>142.7</td>
+      <td>152.7</td>
+      <td>146.7</td>
+      <td>45.0</td>
+      <td>4</td>
+      <td>8.0</td>
+      <td>113</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Cooper Kupp</td>
+      <td>LAR</td>
+      <td>WR</td>
+      <td>29</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>41</td>
+      <td>10.25</td>
+      <td>1</td>
+      <td>72</td>
+      <td>56</td>
+      <td>607</td>
+      <td>10.84</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>93.0</td>
+      <td>148.8</td>
+      <td>152.8</td>
+      <td>120.8</td>
+      <td>45.0</td>
+      <td>2</td>
+      <td>9.0</td>
+      <td>648</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Austin Ekeler</td>
+      <td>LAC</td>
+      <td>RB</td>
+      <td>27</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75</td>
+      <td>349</td>
+      <td>4.65</td>
+      <td>4</td>
+      <td>49</td>
+      <td>41</td>
+      <td>261</td>
+      <td>6.37</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>97.0</td>
+      <td>138.0</td>
+      <td>144.0</td>
+      <td>117.5</td>
+      <td>44.0</td>
+      <td>3</td>
+      <td>10.0</td>
+      <td>610</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Mark Andrews</td>
+      <td>BAL</td>
+      <td>TE</td>
+      <td>27</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3.00</td>
+      <td>0</td>
+      <td>57</td>
+      <td>39</td>
+      <td>455</td>
+      <td>11.67</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>76.0</td>
+      <td>114.8</td>
+      <td>117.8</td>
+      <td>95.3</td>
+      <td>41.0</td>
+      <td>2</td>
+      <td>11.0</td>
+      <td>458</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Justin Jefferson</td>
+      <td>MIN</td>
+      <td>WR</td>
+      <td>23</td>
+      <td>6</td>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>23</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3.00</td>
+      <td>1</td>
+      <td>63</td>
+      <td>46</td>
+      <td>654</td>
+      <td>14.22</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>87.0</td>
+      <td>132.6</td>
+      <td>135.6</td>
+      <td>109.6</td>
+      <td>39.0</td>
+      <td>3</td>
+      <td>12.0</td>
+      <td>657</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Taysom Hill</td>
+      <td>NOR</td>
+      <td>TE</td>
+      <td>32</td>
+      <td>6</td>
+      <td>2</td>
+      <td>5</td>
+      <td>7</td>
+      <td>86</td>
+      <td>1</td>
+      <td>0</td>
+      <td>29</td>
+      <td>276</td>
+      <td>9.52</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2.50</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>72.0</td>
+      <td>73.5</td>
+      <td>76.5</td>
+      <td>72.5</td>
+      <td>37.0</td>
+      <td>3</td>
+      <td>13.0</td>
+      <td>281</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Tyreek Hill</td>
+      <td>MIA</td>
+      <td>WR</td>
+      <td>28</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>18</td>
+      <td>4.50</td>
+      <td>0</td>
+      <td>65</td>
+      <td>50</td>
+      <td>701</td>
+      <td>14.02</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>84.0</td>
+      <td>133.9</td>
+      <td>136.9</td>
+      <td>108.9</td>
+      <td>37.0</td>
+      <td>4</td>
+      <td>14.0</td>
+      <td>719</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Kyler Murray</td>
+      <td>ARI</td>
+      <td>QB</td>
+      <td>25</td>
+      <td>7</td>
+      <td>7</td>
+      <td>184</td>
+      <td>281</td>
+      <td>1667</td>
+      <td>7</td>
+      <td>4</td>
+      <td>45</td>
+      <td>263</td>
+      <td>5.84</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>131.0</td>
+      <td>131.0</td>
+      <td>142.0</td>
+      <td>135.0</td>
+      <td>34.0</td>
+      <td>5</td>
+      <td>15.0</td>
+      <td>263</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Christian McCaffrey</td>
+      <td>CAR</td>
+      <td>RB</td>
+      <td>26</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85</td>
+      <td>393</td>
+      <td>4.62</td>
+      <td>2</td>
+      <td>43</td>
+      <td>33</td>
+      <td>277</td>
+      <td>8.39</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>85.0</td>
+      <td>118.0</td>
+      <td>124.0</td>
+      <td>101.5</td>
+      <td>33.0</td>
+      <td>4</td>
+      <td>16.0</td>
+      <td>670</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Joe Burrow</td>
+      <td>CIN</td>
+      <td>QB</td>
+      <td>26</td>
+      <td>6</td>
+      <td>6</td>
+      <td>152</td>
+      <td>228</td>
+      <td>1616</td>
+      <td>12</td>
+      <td>5</td>
+      <td>27</td>
+      <td>110</td>
+      <td>4.07</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>128.0</td>
+      <td>127.6</td>
+      <td>139.6</td>
+      <td>132.6</td>
+      <td>31.0</td>
+      <td>6</td>
+      <td>17.0</td>
+      <td>110</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Derrick Henry</td>
+      <td>TEN</td>
+      <td>RB</td>
+      <td>28</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>104</td>
+      <td>408</td>
+      <td>3.92</td>
+      <td>5</td>
+      <td>14</td>
+      <td>10</td>
+      <td>121</td>
+      <td>12.10</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>83.0</td>
+      <td>92.9</td>
+      <td>98.9</td>
+      <td>87.9</td>
+      <td>31.0</td>
+      <td>6</td>
+      <td>18.0</td>
+      <td>529</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Breece Hall</td>
+      <td>NYJ</td>
+      <td>RB</td>
+      <td>21</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76</td>
+      <td>391</td>
+      <td>5.14</td>
+      <td>3</td>
+      <td>31</td>
+      <td>19</td>
+      <td>218</td>
+      <td>11.47</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>83.0</td>
+      <td>101.9</td>
+      <td>108.9</td>
+      <td>92.4</td>
+      <td>31.0</td>
+      <td>5</td>
+      <td>19.0</td>
+      <td>609</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Leonard Fournette</td>
+      <td>TAM</td>
+      <td>RB</td>
+      <td>27</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95</td>
+      <td>343</td>
+      <td>3.61</td>
+      <td>1</td>
+      <td>36</td>
+      <td>32</td>
+      <td>232</td>
+      <td>7.25</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>82.0</td>
+      <td>113.5</td>
+      <td>119.5</td>
+      <td>97.5</td>
+      <td>29.0</td>
+      <td>7</td>
+      <td>20.0</td>
+      <td>575</td>
+      <td>131</td>
+    </tr>
+  </tbody>
+    </table>
+
+    <!-- Contact -->
+
+  <div class="w3-container w3-sand w3-content w3-padding-64" style="max-width:1600px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>We love feedback!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Atlanta, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 123-456-7890<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: ffutures@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer and Attributions -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- Javascript functionality for search -->
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabl");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Josefin Sans", sans-serif}
+h2 {font-family: "Josefin Sans", sans-serif}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue-gray w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <img src="/static/FantasyFuturesLogo-2.png" class="w3-bar-item w3-padding-large" alt="Random Name" style="width:8%">
+      <a href="index.html" target="_self" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="weeklyInsights.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Weekly Insights</a>
+    <a href="analyze.html" target="_self" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Analyze</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1700px" id="band">
+    <h2 class="w3-center">Our Team</h2>
+    <p class="w3-opacity"><i>What do we do?</i></p>
+    <p class="w3-justify">Hypothesis<br>
+Here at Fantasy Futures, we seek to use advanced statistics and methods to forge a path to victory in any league, from any situation. We believe that with the right waiver-wire pickups and trades, you can push any team to become a league-winner. To find value on the waiver and in trades, we believe that looking at advanced statistics through various filters and angles provides the best outlook on potential value (and potential decreases in value).<br><br>
+Methodology<br>
+In the past, there has been quite a bit of research done on what stats correlate closely with fantasy football output and production by players. This article was used to determine what statistical measures were utilized and why they were given the weight that they were. Considering that there are many statistics that provide deeper insight into how football players can produce and why, it is worth putting them in a table to compare (or a graph to see how the statistic is trending for that player week by week). Utilizing this chart, we can find some statistics common to all the players that are worth looking into. Mainly, snaps, snap share, targets, and target share, along with red zone (RZ) and green zone (GZ) related statistics. From this, we can tell that the situations that enable football players to produce the best for fantasy football entail them being on the field, playing snaps, and running routes. Using this knowledge, we can create a weighted model that takes most of these statistics into account so that we can generate a better view of a player and their opportunities on the field in terms of fantasy football.
+Data from Pro-Football-Reference.com and DailyRoto was used to make up the database of all players.
+<br><br>Index <br>
+Rank = Fantasy Ranking by Pro-Football-Reference.<br>
+PlayerName = Name of the player. <br>
+Team = Team that the player plays on. <br>
+Position = Primary position of player on the team. <br>
+Age = Age of player. <br>
+GamesPlayed = Number of games played by player.<br>
+GamesStarted = Number of games started by player.<br>
+CompletedPasses = Number of passes that was completed by the quarterback of the team.<br>
+AttemptedPasses = Number of passes attempted by quarterback of the team.<br>
+PassingYards = Number of yards gained by passing the football from the quarterback to various other players.<br>
+PassingTouchdowns = Touchdowns earned by passing the football from the quarterback to a player in or who runs into the endzone.<br>
+Interceptions = Number of times that the quarterback throws a ball that results in a catch by a player of the opposing team.<br>
+RushAttempts = Number of times that a player/team has attempted to rush in a game.<br>
+RushYards = Number of yards gained by rushing the ball.<br>
+YardsPerRush = Number of yards gained on average each time that a player/team tries rushing the ball.<br>
+RushingTouchdowns = Number of touchdowns earned by rushing the ball into the endzone.<br>
+Targets = Number of times the ball was thrown at the player by the quarterback.<br>
+Receptions = Number of times that the player got possession of the ball after being thrown at.<br>
+ReceivingYards = Number of yards that the player gains by receiving the ball (and running after the reception).<br>
+YardsPerReception = How many yards the player gains on average for each reception that they get.<br>
+ReceivingTouchdowns = Number of touchdowns the player earns by receiving the ball.<br>
+Fumbles = Number of times that a player fumbles, or loses control of the ball and has it picked up by another player.<br>
+FL = Fumbles Lost, or the number of fumbles by a player that results in the other team getting control of the ball.<br>
+TotalTouchdowns = Total touchdowns, whether receiving or rushing, made by a player or team.<br>
+2PM = 2 point conversion made after a touchdown.<br>
+2PP = Number of 2 point plays attempted after a touchdown.<br>
+FantPt = Number of fantasy points projected by the player.<br>
+PPR = Points per reception. This is a popular type of fantasy league scoring setting, where each reception by a player is awarded with an extra point.<br>
+DKPt = DraftKings Points. This is a representation of the number of points a player earns in DraftKings settings.<br>
+FDPt = FanDuel Points. This is a representation of the number of points a player earns in FanDuel settings.<br>
+VBD = Value Based Drafting. This is a strategy which assigns values to players based on how much fantasy output they provide as opposed to a replacement level player.<br>
+PositionRank = Rank when compared only to other players in the same position as the player.<br>
+OverallRank = Rank when compared to all players.<br>
+-9999 = Unique identifier for every player.<br>
+Opportunities = Chances that a player has to make a play with the ball.<br>
+RedZone = Area within 20 yards of the end zone, or touchdown area.<br>
+MarketShare = Percentage of the “market” of something. Ex. RedZone Opportunity Market Share, Red Zone Target Market Share.<br>
+RedZoneMarketShare = Market share of Red Zone opportunities.<br>
+RedZoneTargets = Number of targets in the Red Zone.<br>
+RedZoneCarries = Number of times the player carried the ball in the Red Zone.<br>
+MarketShareCarries = Market share of all carries made by the team.<br>
+Snaps = Number of times that the ball was “snapped” back. In other words, number of plays ran by the player or in the game.<br>
+TeamSnaps = Total number of snaps in the game, also all the snaps played by the team.<br>
+SnapPercent = Percentage of all team snaps played by the player.<br>
+SnapsPerGame = Average number of snaps played in one game by a player. This is in the form of a percent of the total team snaps.<br>
+RushPercent = Percent of plays that the team rushes.<br>
+TargetPercent = Percent of plays that the player is targeted on.<br>
+ReceptionRate = Rate of receptions over a number of targets.<br>
+YardsPerTarget = Number of yards gained by the player for every target that the player gets.<br>
+PasserRating = A metric based on various percentages of the quarterback that represents the strength of the passer.<br>
+Y/G = Yards per game. How many yards were produced by the player. Can be specified to be rushing yards per game or air/receiving yards per game.
+Our own terminology:<br>
+Player Score = Grades player attributes including snap share, total snap ranking, target share, average targets, yards per catch, red zone target share, rushing yards per game, and receiving yards per game.<br>
+Quarterback Score = Grades player attributes based on the level of their quarterback. This includes their quarterback’s passer rating, yards per pass attempted, and completion percentage.<br>
+Team Score = Grades player attributes based on the strength of the team’s offense and situation. Includes statistics such as team red zone scoring attempts per game, team PPG (points per game), team rushing yards per game, team receiving yards per game, and point differential.<br>
+Opposing Team Score = Grades player attributes based on the matchup ahead. Utilizes stats of the opposing team’s defense, including PPG allowed, rushing yards allowed (for running backs), receiving yards allowed (for wide receivers and tight ends), blitz percentage, and pressure percentage.<br>
+We believe that these four aspects, together, can show us all the aspects surrounding a player.
+
+    </p>
+</div>
+  <div class="w3-container w3-sand w3-content w3-padding-64" style="max-width:1700px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>We love feedback!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Atlanta, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 123-456-7890<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: ffutures@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- Footer and Attributions -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
