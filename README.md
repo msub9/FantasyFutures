@@ -33,10 +33,10 @@ Contributions
         FantasyFeatures was developed by Pranav Devabhaktuni, Mithun Subhash, Adi Gupta, and Arjun Birthi. Research on advanced football statistics and its correlation with fantasy production by Kenny Hyttenhove was kept in mind when developing the FantasyFeatures grading algorithms. Statistics were provided by Pro-Football-Reference.com and DailyRoto.
 
 
-Definitions
-Rank = Fantasy Ranking by Pro-Football-Reference.
-PlayerName = Name of the player.
-Team = Team that the player plays on.
+Definitions. 
+Rank = Fantasy Ranking by Pro-Football-Reference.  
+PlayerName = Name of the player.  
+Team = Team that the player plays on.  
 Position = Primary position of player on the team.
 Age = Age of player.
 GamesPlayed = Number of games played by player.
